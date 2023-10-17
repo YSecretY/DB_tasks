@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD", "CRUD\CRUD.csproj", "{59DF03C0-3F00-4A77-9008-64FA03429A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{7D48A95C-BCDF-4453-87EB-9D2C7AF9F790}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59DF03C0-3F00-4A77-9008-64FA03429A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DF03C0-3F00-4A77-9008-64FA03429A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DF03C0-3F00-4A77-9008-64FA03429A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DF03C0-3F00-4A77-9008-64FA03429A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D48A95C-BCDF-4453-87EB-9D2C7AF9F790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D48A95C-BCDF-4453-87EB-9D2C7AF9F790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D48A95C-BCDF-4453-87EB-9D2C7AF9F790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D48A95C-BCDF-4453-87EB-9D2C7AF9F790}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
