@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NYSEB+7dy91A3j5LTFeV4hoshj+Z18RDLvEmOIUBuMZuKwwMs/B5BRkTLeG2Do7MOFZZl9fbnDYMGKF5od9m+w==",
+  "dgSpecHash": "mWCDBoTU5m2T0O4q4aGjlI1TVQ/oNUFUn4xvlY2WSz9AB0E2BnnSx2KuImck9nWDiC9W734YICBnFw4QwOp7vw==",
   "success": true,
   "projectFilePath": "/Users/secret/Desktop/programming/C#/db_tasks/CRUD_With_EntityFramework/CRUD_With_EntityFramework/CRUD_With_EntityFramework.csproj",
   "expectedPackageFiles": [
+    "/Users/secret/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/secret/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/secret/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/secret/.nuget/packages/microsoft.entityframeworkcore/7.0.12/microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
     "/Users/secret/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.12/microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
     "/Users/secret/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.12/microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",

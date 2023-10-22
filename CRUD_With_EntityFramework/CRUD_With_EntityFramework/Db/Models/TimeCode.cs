@@ -6,7 +6,7 @@ namespace CRUD_With_EntityFramework.Db.Models;
 public class TimeCode
 {
     public int Id;
-
+    
     public TimeOnly Time { get; set; }
 
     public int LessonId;

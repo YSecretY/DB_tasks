@@ -33,3 +33,4 @@
 /Users/secret/Desktop/programming/C#/db_tasks/CRUD_With_EntityFramework/CRUD_With_EntityFramework/obj/Debug/net7.0/CRUD_With_EntityFramework.pdb
 /Users/secret/Desktop/programming/C#/db_tasks/CRUD_With_EntityFramework/CRUD_With_EntityFramework/obj/Debug/net7.0/CRUD_With_EntityFramework.genruntimeconfig.cache
 /Users/secret/Desktop/programming/C#/db_tasks/CRUD_With_EntityFramework/CRUD_With_EntityFramework/obj/Debug/net7.0/ref/CRUD_With_EntityFramework.dll
+/Users/secret/Desktop/programming/C#/db_tasks/CRUD_With_EntityFramework/CRUD_With_EntityFramework/bin/Debug/net7.0/AutoMapper.dll

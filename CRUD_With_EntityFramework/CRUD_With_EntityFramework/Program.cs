@@ -1,7 +1,8 @@
-﻿using System.Linq.Expressions;
-using System.Xml;
+﻿using System.Diagnostics.CodeAnalysis;
+using AutoMapper;
 using CRUD_With_EntityFramework.Db;
 using CRUD_With_EntityFramework.Db.Models;
+using CRUD_With_EntityFramework.Mapping;
 
 namespace CRUD_With_EntityFramework;
 
@@ -10,9 +11,15 @@ internal abstract class Program
     private static readonly MyDbContextFactory ContextFactory = new();
     private static readonly MyDbContext DbContext = ContextFactory.CreateDbContext(Array.Empty<string>());
 
+    private static readonly MapperConfiguration MapperConfiguration =
+        new(cfg => cfg.AddProfile(new AppMappingProfile(DbContext)));
+
+    private static readonly IMapper Mapper = MapperConfiguration.CreateMapper();
+
     public static void Main(string[] args)
     {
         List<Member> members = DbContext.Members.ToList();
+
         foreach (Member member in members)
         {
             Console.WriteLine(member.Name);
@@ -26,7 +33,33 @@ internal abstract class Program
         if (memberLesson != null) DbContext.MemberLessons.Remove(memberLesson);
 
         DbContext.SaveChanges();
+
+        Console.WriteLine("Members statistic: ");
+        foreach (Member member in members)
+        {
+            MemberStatistic memberStatistic = GetMemberStatistic(member);
+
+            Console.Write($"{memberStatistic.Id}, {memberStatistic.Name}, ");
+            if (memberStatistic.Lessons != null)
+            {
+                foreach (Lesson lesson in memberStatistic.Lessons)
+                {
+                    Console.Write($"{lesson.LessonName} ");
+                }
+            }
+
+            if (memberStatistic.Questions != null)
+            {
+                foreach (Question question in memberStatistic.Questions)
+                {
+                    Console.Write($"{question.QuestionText} ");
+                }
+            }
+
+            Console.WriteLine();
+        }
     }
+
 
     private static void Add100Members()
     {
@@ -104,5 +137,12 @@ internal abstract class Program
         }
 
         DbContext.SaveChanges();
+    }
+
+    private static MemberStatistic GetMemberStatistic(Member member)
+    {
+        MemberStatistic memberStatistic = Mapper.Map<MemberStatistic>(member);
+
+        return memberStatistic;
     }
 }
