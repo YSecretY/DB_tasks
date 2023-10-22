@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using AutoMapper;
+﻿using AutoMapper;
 using CRUD_With_EntityFramework.Db;
 using CRUD_With_EntityFramework.Db.Models;
 using CRUD_With_EntityFramework.Mapping;
@@ -18,21 +17,28 @@ internal abstract class Program
 
     public static void Main(string[] args)
     {
+        //  Basic CRUD with member
+        
+        // List<Member> members = DbContext.Members.ToList();
+        //
+        // foreach (Member member in members)
+        // {
+        //     Console.WriteLine(member.Name);
+        // }
+        //
+        // Member? member10 = DbContext.Members.FirstOrDefault(member => member.Name == "member_10");
+        // if (member10 != null) member10.Name = "Bogdan";
+        //
+        // MemberLesson? memberLesson =
+        //     DbContext.MemberLessons.FirstOrDefault(memberLesson => memberLesson.MemberId == 10);
+        // if (memberLesson != null) DbContext.MemberLessons.Remove(memberLesson);
+        //
+        // DbContext.SaveChanges();
+        
+        
+        //  Example of member statistic
+
         List<Member> members = DbContext.Members.ToList();
-
-        foreach (Member member in members)
-        {
-            Console.WriteLine(member.Name);
-        }
-
-        Member? member10 = DbContext.Members.FirstOrDefault(member => member.Name == "member_10");
-        if (member10 != null) member10.Name = "Bogdan";
-
-        MemberLesson? memberLesson =
-            DbContext.MemberLessons.FirstOrDefault(memberLesson => memberLesson.MemberId == 10);
-        if (memberLesson != null) DbContext.MemberLessons.Remove(memberLesson);
-
-        DbContext.SaveChanges();
 
         Console.WriteLine("Members statistic: ");
         foreach (Member member in members)

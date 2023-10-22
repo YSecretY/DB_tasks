@@ -2,7 +2,6 @@ using AutoMapper;
 using CRUD_With_EntityFramework.Db;
 using CRUD_With_EntityFramework.Db.Models;
 using CRUD_With_EntityFramework.Mapping.Converters;
-using Microsoft.EntityFrameworkCore;
 
 namespace CRUD_With_EntityFramework.Mapping;
 
